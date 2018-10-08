@@ -123,6 +123,7 @@ public class ActivityFrame extends JFrame {
 		//Error Checking
 		addButton.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent arg0) {
+				addGui.resultsField.setText("");
 				addActivity();
 				String durationValue = durationTextField.getText();				
 				try {
