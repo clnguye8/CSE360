@@ -139,8 +139,6 @@ public class ActivityFrame extends JFrame {
 	private void addActivity() {
 		String durationValue = durationTextField.getText();	
 		activityLinkedList.add(new ActivityNode(activityTextField.getText(), Integer.parseInt(durationValue), predTextField.getText()));
-		//Need to access the ResultsFrame text field
-		
 		for(ActivityNode act: activityLinkedList) {
 			addGui.resultsField.append(act + "\n");
 		}

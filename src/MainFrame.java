@@ -60,6 +60,12 @@ public class MainFrame extends JFrame {
 		JButton aboutButton = new JButton("About");
 		aboutButton.setFont(new Font("Arial", Font.PLAIN, 12));
 		panel1.add(aboutButton);
+		aboutButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				AboutFrame addGui = new AboutFrame();
+				addGui.setVisible(true);
+			}
+		});
 		
 		JButton exitButton = new JButton("Exit");
 		exitButton.setFont(new Font("Arial", Font.PLAIN, 12));
@@ -88,6 +94,7 @@ public class MainFrame extends JFrame {
 		mainPane.add(resultsButton);
 		resultsButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				
 			}
 		});
 		
